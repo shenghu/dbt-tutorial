@@ -1,0 +1,12 @@
+jaffle_shop: # this needs to match the profile in your dbt_project.yml file
+    target: dev
+    outputs:
+        dev:
+          type: postgresql
+          host: localhost
+          user: postgres
+          password: passw0rd
+          port: 5439
+          dbname: analytics
+          schema: mda-dbt
+          threads: 4
